@@ -35,7 +35,7 @@ export class ProductService {
   //função para atualizar:
 
   //função para ler o id
-  readById(id: string): Observable<Product> {
+  readById(id: number): Observable<Product> {
     const Url = `${this.baseUrl}/${id}`
     return this.http.get<Product>(Url)
   }
@@ -47,7 +47,7 @@ export class ProductService {
   }
 
   //função excluir produto
-  delete(id: string): Observable<Product> {
+  delete(id: number): Observable<Product> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Product>(url)
   }

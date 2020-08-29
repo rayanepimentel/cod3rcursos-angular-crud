@@ -1,14 +1,14 @@
 import { Router, ActivatedRoute } from '@angular/router';
+import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
-import {Product } from '../product.models'
+import { Product } from './../product.models'
 
 @Component({
-  selector: 'app-product-update',
-  templateUrl: './product-update.component.html',
-  styleUrls: ['./product-update.component.scss']
+  selector: 'app-product-delete',
+  templateUrl: './product-delete.component.html',
+  styleUrls: ['./product-delete.component.scss']
 })
-export class ProductUpdateComponent implements OnInit {
+export class ProductDeleteComponent implements OnInit {
 
   product: Product;
 
@@ -16,25 +16,24 @@ export class ProductUpdateComponent implements OnInit {
     private prodService: ProductService, 
     private router: Router, 
     private route: ActivatedRoute
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-    //receber os dados do produto já preenchido
     const id = +this.route.snapshot.paramMap.get('id')
     this.prodService.readById(id).subscribe(prod => {
       this.product = prod;
     });
   }
 
-  updateProduct(): void { 
-    this.prodService.update(this.product).subscribe(() => {
-      this.prodService.showMessage('Produto atualizado com sucesso!');
+  deleteProduct(): void {
+    this.prodService.delete(this.product.id).subscribe(() => {
+      this.prodService.showMessage('Produto excluido com sucesso!');
       this.router.navigate(['/products']);
     })
   }
 
   cancel(): void {
     this.router.navigate(['/products']);
-   }
+  }
 
 }
