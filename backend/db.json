@@ -7,13 +7,24 @@
     },
     {
       "id": 2,
-      "nome": "Notebook Del",
+      "name": "Notebook Del",
       "price": 4000
     },
     {
       "id": 3,
-      "nome": "Xiaomi",
+      "name": "Xiaomi",
       "price": 1200
+    },
+    {
+      "name": "Veio do formulário",
+      "price": "10.99",
+      "id": 4
+    },
+
+    {
+      "name": "geladeira",
+      "price": "1199.99",
+      "id": 8
     }
   ]
 }
