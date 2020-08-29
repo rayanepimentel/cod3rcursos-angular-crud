@@ -10,7 +10,7 @@ import {Product } from '../product.models'
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product 
+  product: Product;
 
   constructor(
     private prodService: ProductService, 
@@ -22,14 +22,19 @@ export class ProductUpdateComponent implements OnInit {
     //receber os dados do produto já preenchido
     const id = this.route.snapshot.paramMap.get('id')
     this.prodService.readById(id).subscribe(prod => {
-      this.product = prod
+      this.product = prod;
     });
   }
 
-  updateProduct(): void { }
+  updateProduct(): void { 
+    this.prodService.update(this.product).subscribe(() => {
+      this.prodService.showMessage('Produto atualizado com sucesso!');
+      this.router.navigate(['/products']);
+    })
+  }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(['/products']);
    }
 
 }

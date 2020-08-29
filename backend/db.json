@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC Preta",
-      "price": 5.89
+      "price": "1.50"
     },
     {
       "id": 2,
@@ -16,13 +16,13 @@
       "price": 1200
     },
     {
-      "name": "Veio do formulário",
-      "price": "10.99",
+      "name": "Mouse",
+      "price": "10",
       "id": 4
     },
     {
       "id": 5,
-      "name": "teste form",
+      "name": "Caderno",
       "price": "25"
     }
   ]
