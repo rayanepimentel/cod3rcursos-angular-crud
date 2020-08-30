@@ -3,22 +3,26 @@
     {
       "id": 1,
       "name": "Caneta BIC Preta",
-      "price": "1.50"
+      "price": "1.50",
+      "url": "https://google.com/"
     },
     {
       "id": 2,
       "name": "Notebook Del",
-      "price": 4000
+      "price": 4000,
+      "url": "https://google.com/"
     },
     {
       "id": 3,
       "name": "Xiaomi",
-      "price": "1100"
+      "price": "1100",
+      "url": "https://www.petz.com.br/blog/wp-content/uploads/2020/04/meu-primeiro-gato.jpg"
     },
     {
-      "id": 5,
-      "name": "Caderno",
-      "price": "25"
+      "id": 4,
+      "name": "Lapis",
+      "price": ".9",
+      "url": "http://linkedin.com/"
     }
   ]
 }
