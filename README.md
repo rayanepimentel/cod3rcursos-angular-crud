@@ -1,4 +1,4 @@
-<h1>Angular 9</h1>
+<h1>Angular 9 - Essencial</h1>
 
 <hr/>
 <h2>Conteúdo</h2>
@@ -8,8 +8,10 @@
   <li>Os principais conceitos do Angular 9: Componentes, Diretivas, Pipes, Services e muito mais</li>
   <li>Criar uma Aplicação de Cadastro (CRUD) com Criação, Leitura, Atualização e Exclusão de Produto</li>
   <li>Aprender Angular na Prática de forma muito objetiva</li>
-<ul>
+</ul>
 
+<hr/>
+<a href="https://www.cod3r.com.br/certificates/yrwszyhqys" target:"_blank">Certificado de conclusão</a>
 
 
 
